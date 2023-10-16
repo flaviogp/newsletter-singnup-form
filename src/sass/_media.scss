@@ -1,0 +1,29 @@
+@media screen and (min-width: 1024px) {
+  main {
+    width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    .image-container {
+      max-width: 50%;
+    }
+
+    .content-container {
+
+      .content {
+        h1 {
+          font-size: 3.5em;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+
+    }
+  }
+}

@@ -1,5 +1,101 @@
 main {
   min-width: 350px;
-  height: 100%;
   background-color: $white;
+
+  .image-container {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content-container {
+    // font-size: 1.5rem;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    .content {
+      padding: 20px;
+      color: $dark-slate-grey;
+
+      h1 {
+        font-size: 3em;
+        margin-bottom: 15px;
+      }
+
+      p {
+        line-height: 25px;
+      }
+    }
+
+    form {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+
+      label {
+        .head-input {
+          color: $dark-slate-grey;
+          font-weight: bold;
+          margin-bottom: 15px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            width: max-content;
+          }
+        }
+
+        input[type=email] {
+          width: 100%;
+          padding: 15px;
+          border: 1px solid $grey;
+          border-radius: 5px;
+        }
+      }
+
+      button[type=submit] {
+        padding: 15px;
+        border: none;
+        background-color: $dark-slate-grey;
+        color: $white;
+        border-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .error {
+        color: #f00;
+        width: 100%;
+      }
+    }
+  }
+
+  ul {
+    margin: 20px 0;
+
+    li {
+      margin-bottom: 15px;
+      display: flex;
+      position: relative;
+
+      &::before {
+        content: url(../assets/images/icon-list.svg);
+        position: absolute;
+
+      }
+
+      p {
+        width: 90%;
+        margin-left: 35px;
+      }
+    }
+  }
 }
