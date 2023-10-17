@@ -1,4 +1,4 @@
-import {useState } from "react";
+import Button from "../Button";
 
 interface FormProps{
   setEmail: (args:string) => void
@@ -23,9 +23,10 @@ export default function Form({setEmail, validEmail, error}:FormProps) {
           id="email"
           placeholder="email@company.com"
           onChange={e=> setEmail(e.currentTarget.value)}
+          className={error ? 'input-error' : ''}
           />
       </label>
-      <button type="submit"> Subscribe to monthly newsletter</button>
+      <Button text={'Subscribe to monthly newsletter'}/>
     </form>
   )
 }

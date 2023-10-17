@@ -1,6 +1,7 @@
 main {
   min-width: 350px;
   background-color: $white;
+  height: 100%;
 
   .image-container {
     width: 100%;
@@ -18,16 +19,6 @@ main {
 
     .content {
       padding: 20px;
-      color: $dark-slate-grey;
-
-      h1 {
-        font-size: 3em;
-        margin-bottom: 15px;
-      }
-
-      p {
-        line-height: 25px;
-      }
     }
 
     form {
@@ -35,13 +26,13 @@ main {
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: 20px;
+      gap: 15px;
 
       label {
         .head-input {
           color: $dark-slate-grey;
           font-weight: bold;
-          margin-bottom: 15px;
+          margin-bottom: 5px;
           width: 100%;
           display: flex;
           justify-content: space-between;
@@ -59,22 +50,20 @@ main {
         }
       }
 
-      button[type=submit] {
-        padding: 15px;
-        border: none;
-        background-color: $dark-slate-grey;
-        color: $white;
-        border-radius: 5px;
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-
       .error {
         color: #f00;
         width: 100%;
       }
+
+      .input-error {
+        background-color: rgba($tomato, .3);
+        border: 1px solid $tomato;
+
+        &::placeholder {
+          color: $tomato
+        }
+      }
+
     }
   }
 
@@ -98,4 +87,27 @@ main {
       }
     }
   }
+
+  .thanks-container {
+    max-width: 400px;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .thanks-content {
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      h1 {
+        margin: 25px 0;
+      }
+    }
+  }
+
+
 }
