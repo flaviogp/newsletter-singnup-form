@@ -1,27 +1,110 @@
-# React + TypeScript + Vite
+<div id="top"></div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+  <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="frontendmentor" width="80">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <h2 align="center">E-commerce product page</h2>
+  <p align="center">
+    <a href="https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv"><strong>Frontend Mentor Challenge</strong></a>
+    <br />
+    <br />
+    <a href="https://extraordinary-speculoos-640ca3.netlify.app/">View Demo</a>
+    ·
+    <a href="https://github.com/flaviogp/newsletter-singnup-form/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/flaviogp/newsletter-singnup-form/issues">Request Feature</a>
+  </p>
+</div>
 
-## Expanding the ESLint configuration
+<!-- Bagdes -->
+<div align="center">
+  <!-- Profile -->
+  <a href="https://www.frontendmentor.io/profile/flaviogp">
+    <img src="https://img.shields.io/badge/Profile-Flavio%20gomes-07043B?style=for-the-badge&logo=frontendmentor" alt="Flavio Profile">
+  </a>
+  <!-- Status -->
+    <a href="#">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
+  </a>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+</div>
 
-- Configure the top-level `parserOptions` property like this:
+#
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+<div align="center">
+
+![](./design/desktop-preview.jpg)
+
+</div>
+
+This is a solution to the [Newsletter sign-up form with success message](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv).Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+<h2 align="center">Links</h2>
+
+- Solution URL: [Newsletter sign-up form with success message(ReactJs/TypeScript) | Frontend Mentor](https://www.frontendmentor.io/solutions/newsletter-singnup-form-using-react-typescript-and-a-sass-Q3lpVrWjMD)
+
+- Live Site URL: [ Click here ](https://extraordinary-speculoos-640ca3.netlify.app/)
+
+<br>
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
+
+Your users should be able to:
+
+- View the bar chart and hover over the individual bars to see the correct amounts for each day
+
+- See the current day's bar highlighted in a different colour to the other bars
+
+- View the optimal layout for the content depending on their device's screen size
+
+- See hover states for all interactive elements on the page
+
+- Bonus: See dynamically generated bars based on the data provided in the local JSON file
+
+## My process
+
+### Built with
+
+<!-- Bagdes -->
+
+![](https://img.shields.io/badge/reactjs-23272F?style=for-the-badge&logo=react)
+![](https://img.shields.io/badge/typescript-23272F?style=for-the-badge&logo=typescript)
+![](https://img.shields.io/badge/sass-23272F?style=for-the-badge&logo=sass)
+
+- React
+- SASS
+- Semantic HTML5 markup
+- TypeScript
+
+### Useful resources
+
+- [React](https://react.dev/learn)
+- [SASS](https://sass-lang.com/guide/)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+
+## Author
+
+- Frontend Mentor - [@flaviogp](https://www.frontendmentor.io/profile/flaviogp)
+
+## Acknowledgments
+
+### Run the project
+
+To run the client, you need to run the following command:
+
+```bash
+npm install
+npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

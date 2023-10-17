@@ -1,6 +1,5 @@
 @media screen and (min-width: 1024px) {
   main {
-    max-height: 60%;
     display: flex;
     flex-direction: row-reverse;
     border-radius: 20px;
@@ -10,6 +9,7 @@
 
     .image-container {
       max-width: 50%;
+
     }
 
     .content-container {
